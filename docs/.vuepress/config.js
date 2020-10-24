@@ -52,6 +52,7 @@ module.exports = {
                 title: 'Commandes',
                 collapsable: false,
                 children: [
+                    ['commandes/archive', 'Archive'],
                     ['commandes/docker', 'Docker'],
                     ['commandes/mariadb', ' Mariadb'],
                     ['commandes/screen', 'Screen'],
