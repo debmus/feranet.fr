@@ -1,5 +1,3 @@
-const moment = require('moment');
-
 module.exports = {
     locales: {
         '/': {
@@ -19,7 +17,6 @@ module.exports = {
     themeConfig: {
         logo: '/assets/logo.png',
         smoothScroll: true,
-        lastUpdated: 'Dernière modification',
         searchPlaceholder: 'Rechercher ...',
         repo: 'debmus/feranet.fr',
         docsRepo: 'debmus/feranet.fr',
