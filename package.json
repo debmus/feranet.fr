@@ -13,11 +13,9 @@
         "@vuepress/plugin-back-to-top": "^1.7.1",
         "@vuepress/plugin-medium-zoom": "^1.7.1",
         "@vuepress/plugin-nprogress": "^1.7.1",
-        "moment": "^2.29.1",
         "vuepress": "^1.7.1"
     },
     "dependencies": {
-        "@vuepress/plugin-last-updated": "^1.7.1",
         "axios": "^0.21.0"
     }
 }

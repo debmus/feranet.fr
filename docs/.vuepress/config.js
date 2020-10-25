@@ -15,16 +15,6 @@ module.exports = {
         ['@vuepress/back-to-top'],
         ['@vuepress/medium-zoom'],
         ['@vuepress/nprogress'],
-        [
-            '@vuepress/last-updated',
-            {
-                transformer: (timestamp, lang) => {
-                    const moment = require('moment')
-                    moment.locale(lang)
-                    return moment(timestamp).fromNow()
-                }
-            },
-        ],
     ],
     themeConfig: {
         logo: '/assets/logo.png',
