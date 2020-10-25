@@ -8,7 +8,7 @@ sidebar: false
 
 <style lang="stylus" scoped>
 a
-    border: 1px solid 1e88e5
+    border: 1px solid #1e88e5
     padding: .9rem
     font-size: 1.2rem
     background-color: #1e88e5
