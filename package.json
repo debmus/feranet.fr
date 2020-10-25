@@ -1,7 +1,7 @@
 {
     "name": "feranet",
-    "version": "1.0.0",
-    "description": "wiki & tools",
+    "version": "2.0.0",
+    "description": "wiki & Outils",
     "main": "index.js",
     "scripts": {
         "dev": "vuepress dev docs",
@@ -17,6 +17,7 @@
         "vuepress": "^1.7.1"
     },
     "dependencies": {
-        "@vuepress/plugin-last-updated": "^1.7.1"
+        "@vuepress/plugin-last-updated": "^1.7.1",
+        "axios": "^0.21.0"
     }
 }

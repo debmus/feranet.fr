@@ -5,7 +5,7 @@ module.exports = {
         '/': {
             lang: 'fr-FR',
             title: "Feranet",
-            description: "Wiki & Tool",
+            description: "Wiki & Outils",
         }
     },
     head: [
@@ -27,7 +27,7 @@ module.exports = {
         ],
     ],
     themeConfig: {
-        logo: '/assets/favicon.ico',
+        logo: '/assets/logo.png',
         smoothScroll: true,
         lastUpdated: 'Dernière modification',
         searchPlaceholder: 'Rechercher ...',
@@ -38,42 +38,47 @@ module.exports = {
         editLinks: true,
         editLinkText: 'Editer sur GitHub',
         nav: [
-            { text: 'Wiki', link: '/' }
+            { text: 'Accueil', link: '/' },
+            { text: 'Wiki', link: '/wiki/' },
+            { text: 'Outils', link: '/outils/' },
+            { text: 'Couleurs', link: 'https://debmus.github.io/color/' },
         ],
-        sidebar: [{
+        sidebar: [
+            '/wiki/',
+            {
                 title: 'Bash',
                 collapsable: false,
                 children: [
-                    ['bash/conditions', 'Les conditions'],
-                    ['bash/manipulations', 'Manipulations de text']
+                    ['wiki/bash/conditions', 'Les conditions'],
+                    ['wiki/bash/manipulations', 'Manipulations de text']
                 ]
             },
             {
                 title: 'Commandes',
                 collapsable: false,
                 children: [
-                    ['commandes/archive', 'Archive'],
-                    ['commandes/docker', 'Docker'],
-                    ['commandes/mariadb', ' Mariadb'],
-                    ['commandes/screen', 'Screen'],
-                    ['commandes/ssh', 'SSH'],
-                    ['commandes/vim', 'Vim']
+                    ['wiki/commandes/archive', 'Archive'],
+                    ['wiki/commandes/docker', 'Docker'],
+                    ['wiki/commandes/mariadb', ' Mariadb'],
+                    ['wiki/commandes/screen', 'Screen'],
+                    ['wiki/commandes/ssh', 'SSH'],
+                    ['wiki/commandes/vim', 'Vim']
                 ]
             },
             {
                 title: 'Configuration',
                 collapsable: false,
                 children: [
-                    ['configuration/fail2ban', 'Fail2ban'],
-                    ['configuration/iptables-ipset', 'Iptables & Ipset'],
-                    ['configuration/ssh', 'SSH']
+                    ['wiki/configuration/fail2ban', 'Fail2ban'],
+                    ['wiki/configuration/iptables-ipset', 'Iptables & Ipset'],
+                    ['wiki/configuration/ssh', 'SSH']
                 ]
             },
             {
                 title: 'Windows 10',
                 collapsable: false,
                 children: [
-                    ['windows10/bloatware-trackers', 'Bloatware et trackers']
+                    ['wiki/windows10/bloatware-trackers', 'Bloatware et trackers']
                 ]
             }
         ]
