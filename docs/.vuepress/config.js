@@ -29,6 +29,7 @@ module.exports = {
             { text: 'Wiki', link: '/wiki/' },
             { text: 'Outils', link: '/outils/' },
             { text: 'Couleurs', link: 'https://debmus.github.io/color/' },
+            { text: 'Images', link: 'https://cloud.feranet.fr/s/SD3fFFYacpcczYa' }
         ],
         sidebar: [
             '/wiki/',
