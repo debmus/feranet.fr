@@ -16,3 +16,5 @@ features:
   details: Mes créations d'images et de logos
 footer: MIT Licensed | Copyright © 2020 - Feranet.fr
 ---
+
+> **Me contacter par email:** 7vtzug36x[arobase]relay.firefox.com
