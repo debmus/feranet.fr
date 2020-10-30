@@ -1,6 +1,6 @@
 {
     "name": "feranet",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "wiki & Outils",
     "main": "index.js",
     "scripts": {
