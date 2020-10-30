@@ -18,18 +18,13 @@ module.exports = {
         logo: '/assets/logo.png',
         smoothScroll: true,
         searchPlaceholder: 'Rechercher ...',
-        repo: 'debmus/feranet.fr',
-        docsRepo: 'debmus/feranet.fr',
-        docsDir: 'docs',
-        docsBranch: 'main',
-        editLinks: true,
-        editLinkText: 'Editer sur GitHub',
         nav: [
             { text: 'Accueil', link: '/' },
             { text: 'Wiki', link: '/wiki/' },
-            { text: 'Outils', link: '/outils/' },
+            { text: 'Outils', link: 'https://app.feranet.fr' },
             { text: 'Couleurs', link: 'https://debmus.github.io/color/' },
-            { text: 'Images', link: 'https://cloud.feranet.fr/s/SD3fFFYacpcczYa' }
+            { text: 'Images', link: 'https://cloud.feranet.fr/s/SD3fFFYacpcczYa' },
+            { text: 'Images', link: 'https://github.com/debmus/feranet.fr' }
         ],
         sidebar: [
             '/wiki/',
