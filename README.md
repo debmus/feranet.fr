@@ -12,7 +12,8 @@ npm run dev                 # Version de développement
 npm run build               # compilation static -> .docs/.vuepress/dist
 ```
 
-## Utilisation (docker | docs/.vuepress/dist) :
+## Utilisation (docker) :
+Contenu de .docs/.vuepress/dist dans feranet.fr
 ```
 cd feranet.fr
 curl -L -o docker-compose.yml https://raw.githubusercontent.com/debmus/feranet.fr/docker-compose.yml
