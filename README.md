@@ -1,3 +1,4 @@
-# Feranet.fr | Wiki & Outils
+# feranet.fr
+Wiki & Outils
 
-https://feranet.fr
+Démo : https://feranet.fr
