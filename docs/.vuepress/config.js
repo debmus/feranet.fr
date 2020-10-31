@@ -22,7 +22,6 @@ module.exports = {
             { text: 'Accueil', link: '/' },
             { text: 'Wiki', link: 'wiki.md' },
             { text: 'Outils', link: 'https://app.feranet.fr' },
-            { text: 'Couleurs', link: 'https://debmus.github.io/color/' },
             { text: 'Images', link: 'https://cloud.feranet.fr/s/SD3fFFYacpcczYa' },
             { text: 'GitHub', link: 'https://github.com/debmus/feranet.fr' }
         ],
