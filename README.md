@@ -13,7 +13,7 @@ npm run build               # compilation static -> .docs/.vuepress/dist
 ```
 
 ## Utilisation (docker) :
-Contenu de .docs/.vuepress/dist dans feranet.fr
+> Si le contenu de `.docs/.vuepress/dist` se trouve dans `feranet.fr`
 ```
 cd feranet.fr
 curl -L -o docker-compose.yml https://raw.githubusercontent.com/debmus/feranet.fr/main/docker-compose.yml
