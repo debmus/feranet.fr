@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  app:
+    image: https:latest
+    container_name: feranet
+    hostname : feranet
+    ports:
+      - "8484:80"
+    restart: always
+    volumes:
+      - ./data:/usr/local/apache2/htdocs/
