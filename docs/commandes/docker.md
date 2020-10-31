@@ -74,9 +74,6 @@ docker rm $(docker ps -a -q)
 # Supprimer les images
 docker rmi -f $(docker images -a -q)
 
-# Supprimer les images non taggées
-docker rmi $(docker images -q -f "dangling=true")
-
 # Supprimer les images, les conteneurs arrêtées, les réseaux inutilisées et construit le cache
 docker system prune
 ```
