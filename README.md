@@ -16,7 +16,7 @@ npm run build               # compilation static -> .docs/.vuepress/dist
 Contenu de .docs/.vuepress/dist dans feranet.fr
 ```
 cd feranet.fr
-curl -L -o docker-compose.yml https://raw.githubusercontent.com/debmus/feranet.fr/docker-compose.yml
+curl -L -o docker-compose.yml https://raw.githubusercontent.com/debmus/feranet.fr/main/docker-compose.yml
 docker-compose up -d
 
 http://127.0.0.1:8484
