@@ -17,7 +17,7 @@
 |`sed 's/^/word1/'`| Ajouter 'word1' au début de chaque lignes |
 |`sed 's/$/word2/'`| Ajouter 'word2' à la fin de chaque lignes |
 |`sed '$ s/.$//'`| Supprimer le dernier caractère de la dernière ligne |
-|`sed 's/\.word3$//g' `| Supprimer le word3 des dernières lignes |
+|`sed 's/\.word3$//g' `| Supprimer le mot word3 des dernières lignes |
 
 ## cut
 |:computer:|:page_facing_up:|
