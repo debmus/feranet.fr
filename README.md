@@ -1,23 +1,26 @@
 # feranet.fr
-Wiki & Outils
+Wiki
+https://feranet.fr
 
-Démo : https://feranet.fr
-
-## Instalaltion :
+## Project setup
 ```
-git clone https://github.com/debmus/feranet.fr.git
-
-npm install -D vuepress     # https://vuepress.vuejs.org/
-npm run dev                 # Version de développement
-npm run build               # compilation static -> .docs/.vuepress/dist
+npm install
 ```
 
-## Utilisation (docker) :
-> Si le contenu de `.docs/.vuepress/dist` se trouve dans `feranet.fr`
+### Compiles and hot-reloads for development
 ```
-cd feranet.fr
-curl -L -o docker-compose.yml https://raw.githubusercontent.com/debmus/feranet.fr/main/docker-compose.yml
-docker-compose up -d
+npm run serve
+```
 
-http://127.0.0.1:8484
+### Compiles and minifies for production
 ```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
