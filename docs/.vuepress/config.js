@@ -15,18 +15,17 @@ module.exports = {
         ['@vuepress/nprogress'],
     ],
     themeConfig: {
-        logo: '/assets/logo.png',
+        logo: '/assets/logo.svg',
         smoothScroll: true,
         searchPlaceholder: 'Rechercher ...',
         nav: [
-            { text: 'Accueil', link: '/' },
-            { text: 'Wiki', link: 'wiki.md' },
+            { text: 'Wiki', link: '/' },
             { text: 'Outils', link: 'https://app.feranet.fr' },
             { text: 'Images', link: 'https://cloud.feranet.fr/s/SD3fFFYacpcczYa' },
             { text: 'GitHub', link: 'https://github.com/debmus/feranet.fr' }
         ],
         sidebar: [
-            ['wiki.md', 'Wiki'],
+            ['/', 'Wiki'],
             {
                 title: 'Bash',
                 collapsable: false,
