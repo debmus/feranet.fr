@@ -63,7 +63,7 @@ scp root@1.2.3.4 './scripts.sh'
 scp -P 5678 root@1.2.3.4 './scripts.sh'
 ```
 
-## Executer une function à l'intérieur d'un script
+## Executer une fonction à l'intérieur d'un script
 ```bash
 scp root@1.2.3.4 "$(declare -f fonction_creation); fonction_creation" > /dev/null 2>&1
 
