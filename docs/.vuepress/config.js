@@ -21,7 +21,7 @@ module.exports = {
         nav: [
             { text: 'Wiki', link: '/' },
             { text: 'Outils', link: 'https://app.feranet.fr' },
-            { text: 'Images', link: 'https://cloud.feranet.fr/s/SD3fFFYacpcczYa' },
+            { text: 'Images', link: 'https://cloud.feranet.fr/s/TWYWF6KrpdfXCf9' },
             { text: 'GitHub', link: 'https://github.com/debmus/feranet.fr' }
         ],
         sidebar: [
