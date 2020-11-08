@@ -1,5 +1,4 @@
 # feranet.fr
-Wiki
 https://feranet.fr
 
 ## Project setup
