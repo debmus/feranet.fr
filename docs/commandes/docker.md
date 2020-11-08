@@ -7,6 +7,7 @@
 ```bash
 # Télécharger une image ou la mettre à jour
 docker pull debian
+
 # Executer et démarrer une image
 docker run debian
 ```
@@ -38,10 +39,9 @@ docker run -d --name my_debian --rm -p 8080:80 -ti -e NAME=debian_variable -v /v
 
 ## Modification sur les containers
 ```bash
-# Se rattacher à un conteneur sans le fermer avec un <kbd>Ctrl</kbd> + <kbd>c</kbd>
-docker attach --sig-proxy=false my_debian
 # Se connecter à un conteneur
 docker exec -ti my_debian bash
+
 # Lier le conteneur phpServeur avec apache2 et lancé un terminal
 docker run -it --link phpServeur:phpServeur httpd bash
 ```
@@ -50,6 +50,7 @@ docker run -it --link phpServeur:phpServeur httpd bash
 ```bash
 # Démarrer un conteneur
 docker start my_debian
+
 # Arrêter un conteneur
 docker stop my_debian
 ```
@@ -68,12 +69,23 @@ docker stats
 
 ## Suppression
 ```bash
-# Supprimer les conteneurs
+# Supprimer tous les conteneurs
 docker rm $(docker ps -a -q)
 
-# Supprimer les images
+# Supprimer toutes les images
 docker rmi -f $(docker images -a -q)
 
 # Supprimer les images, les conteneurs arrêtées, les réseaux inutilisées et construit le cache
 docker system prune
+```
+
+## Mettre à jour docker-compose.yml
+```bash
+docker-compose pull
+
+# Relancer les containers
+docker-compose up -d --remove-orphans
+
+# Supprimez les images obsolètes
+docker image prune
 ```
