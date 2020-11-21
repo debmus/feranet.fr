@@ -4,11 +4,11 @@
 ```bash
 # Création
 tar cvf archive.tar fichiers/dossiers
-tar zcvf archive.tar fichiers/dossiers # gzip
+tar zcvf archive.tar.gz fichiers/dossiers # gzip
 
 # Extraction
 tar xvf archive.tar
-tar zxvf archive.tar # gzip
+tar zxvf archive.tar.gz # gzip
 ```
 
 ## zip
