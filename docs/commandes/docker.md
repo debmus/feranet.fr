@@ -13,9 +13,9 @@ docker run debian
 ```
 
 ## Commande d'éxecution plus complète
-```docker
+```bash
 # Donner un nom au conteneur
---name
+--name my_debian 
 # Supprimer le container apres chaque utilisation
 --rm
 # Détacher le container
@@ -24,14 +24,14 @@ docker run debian
 -p 8080:80
 # Afficher le retour du conteneur et permet une interface avec lui
 -ti
-# Affecter une varible à appliquer
-NAME=
+# Affecter une varible d'environement
+-e NAME=debian_variable
 # Monter le dossier /var/www/html de l'hôte vers le dossier /var/lib/debian du conteneur avec les bon droits :
 -v /var/www/html:/var/lib/debian:ro
 # Éxecuter la commande bash
 bash
 # Nom de l'hôte :
--h 
+-h toto
 
 # Exemple
 docker run -d --name my_debian --rm -p 8080:80 -ti -e NAME=debian_variable -v /var/www/html:/var/lib/debian:ro -h toto debian bash
@@ -79,6 +79,18 @@ docker rmi -f $(docker images -a -q)
 docker system prune
 ```
 
+## docker-compose.yml
+```bash
+# Voir le status 
+docker-compose ps
+
+# Valider la syntaxe
+docker-compose config
+
+# Affichier les logs
+docker-compose logs -f --tail 5
+```
+
 ## Mettre à jour docker-compose.yml
 ```bash
 docker-compose pull
@@ -88,4 +100,23 @@ docker-compose up -d --remove-orphans
 
 # Supprimez les images obsolètes
 docker image prune
+```
+
+## Exemple de configuration docker-compose.yml
+```docker
+version: '3'
+services:
+  app:
+    image: nginx
+    container_name: nginx_app
+    hostname : nginx
+    restart: always
+    ports:
+      - "80:8787"
+    volumes:
+      - ./data:/data/
+    environment:
+      HOST=http://0.0.0.0:8787
+    devices:
+      - "/dev/sda:/dev/sda"
 ```
