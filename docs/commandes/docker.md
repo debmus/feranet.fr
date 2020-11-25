@@ -79,6 +79,18 @@ docker rmi -f $(docker images -a -q)
 docker system prune
 ```
 
+## Construire / Exporter / Importer
+```bash
+# Construire une image depuis Dockerfile
+docker built -t my_debian .
+
+# Exporter une image en .tar
+docker save -o ./my_debian my_debian
+
+# Importer une image en .tar
+docker load -i my_debian
+```
+
 ## docker-compose.yml
 ```bash
 # Voir le status 
