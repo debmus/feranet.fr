@@ -19,46 +19,47 @@ module.exports = {
         smoothScroll: true,
         searchPlaceholder: 'Rechercher ...',
         nav: [
-            /* { text: 'Wiki', link: '/' }, */
+            { text: 'Wiki', link: '/wiki/' },
+            { text: 'Outils', link: 'https://tools.feranet.fr' },
             { text: 'Images', link: 'https://cloud.feranet.fr/s/TWYWF6KrpdfXCf9' },
             { text: 'GitHub', link: 'https://github.com/debmus/feranet.fr' }
         ],
         sidebar: [
-            /* ['/', 'Wiki'], */
+            ['/wiki/', 'Wiki'],
             {
                 title: 'Bash',
                 collapsable: false,
                 children: [
-                    ['bash/conditions', 'Les conditions'],
-                    ['bash/manipulations', 'Manipulations de text']
+                    ['wiki/bash/conditions', 'Les conditions'],
+                    ['wiki/bash/manipulations', 'Manipulations de text']
                 ]
             },
             {
                 title: 'Commandes',
                 collapsable: false,
                 children: [
-                    ['commandes/archive', 'Archive'],
-                    ['commandes/docker', 'Docker'],
-                    ['commandes/mariadb', ' Mariadb'],
-                    ['commandes/screen', 'Screen'],
-                    ['commandes/ssh', 'SSH'],
-                    ['commandes/vim', 'Vim']
+                    ['wiki/commandes/archive', 'Archive'],
+                    ['wiki/commandes/docker', 'Docker'],
+                    ['wiki/commandes/mariadb', ' Mariadb'],
+                    ['wiki/commandes/screen', 'Screen'],
+                    ['wiki/commandes/ssh', 'SSH'],
+                    ['wiki/commandes/vim', 'Vim']
                 ]
             },
             {
                 title: 'Configuration',
                 collapsable: false,
                 children: [
-                    ['configuration/fail2ban', 'Fail2ban'],
-                    ['configuration/iptables-ipset', 'Iptables & Ipset'],
-                    ['configuration/ssh', 'SSH']
+                    ['wiki/configuration/fail2ban', 'Fail2ban'],
+                    ['wiki/configuration/iptables-ipset', 'Iptables & Ipset'],
+                    ['wiki/configuration/ssh', 'SSH']
                 ]
             },
             {
                 title: 'Windows 10',
                 collapsable: false,
                 children: [
-                    ['windows10/bloatware-trackers', 'Bloatware et trackers']
+                    ['wiki/windows10/bloatware-trackers', 'Bloatware et trackers']
                 ]
             }
         ]
