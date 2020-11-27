@@ -49,26 +49,26 @@ scp -r root@1.2.3.4:dossier /home/toto
 
 ## Executer une commande
 ```bash
-scp root@1.2.3.4 'df -h'
+ssh root@1.2.3.4 'df -h'
 
 # Sur le port 5678
-scp -P 5678 root@1.2.3.4 'df -h'
+ssh -P 5678 root@1.2.3.4 'df -h'
 ```
 
 ## Executer un script
 ```bash
-scp root@1.2.3.4 './scripts.sh'
+ssh root@1.2.3.4 './scripts.sh'
 
 # Sur le port 5678
-scp -P 5678 root@1.2.3.4 './scripts.sh'
+ssh -P 5678 root@1.2.3.4 './scripts.sh'
 ```
 
 ## Executer une fonction à l'intérieur d'un script
 ```bash
-scp root@1.2.3.4 "$(declare -f fonction_creation); fonction_creation" > /dev/null 2>&1
+ssh root@1.2.3.4 "$(declare -f fonction_creation); fonction_creation" > /dev/null 2>&1
 
 # Sur le port 5678
-scp -P 5678 root@1.2.3.4 "$(declare -f fonction_creation); fonction_creation" > /dev/null 2>&1
+ssh -P 5678 root@1.2.3.4 "$(declare -f fonction_creation); fonction_creation" > /dev/null 2>&1
 ```
 
 ## Autres commandes utiles
