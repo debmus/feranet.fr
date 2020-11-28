@@ -105,7 +105,7 @@
 |:computer:|:page_facing_up:|
 |-|-|
 |`find . -type f -name "*jpg*" -exec rm -rf "{}" \;`| Supprimer récursivement tous les fichiers qui contiennent "jpg" |
-|`find . -type f -name '*jpg' | xargs -i cp -p "{}" {}_TEMP`| Copier récursivement tous les fichiers qui contiennent "jpg" en ajoutant "_TEMP" |
+|`find . -type f -name '*jpg' -print0 | xargs -0 -i cp -p "{}" {}_TEMP`| Copier récursivement tous les fichiers qui contiennent "jpg" en ajoutant "_TEMP" |
 
 ## rename
 |:computer:|:page_facing_up:|
