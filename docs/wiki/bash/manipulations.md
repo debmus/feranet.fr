@@ -16,8 +16,8 @@
 |`sed -i 's/chaîne1/chaîne2/g' fichier.txt`| Editer la chaîne de caractère 'chaîne1' en 'chaîne2' d'un fichier |
 |`sed 's/^/word1/'`| Ajouter 'word1' au début de chaque lignes |
 |`sed 's/$/word2/'`| Ajouter 'word2' à la fin de chaque lignes |
-|`sed '/^word1.*/i word2' fichier.txt`| Ajouter 'word1' avant 'word2'|
-|`sed '/^word1.*/a word2' fichier.txt`| Ajouter 'word1' après 'word2' |
+|`sed '/^word1.*/i word2' fichier.txt`| Ajouter 'word2' avant 'word1' |
+|`sed '/^word1.*/a word2' fichier.txt`| Ajouter 'word2' après 'word1' |
 |`sed '$ s/.$//'`| Supprimer le dernier caractère de la dernière ligne |
 |`sed 's/\.word3$//g' `| Supprimer le mot word3 des dernières lignes |
 
