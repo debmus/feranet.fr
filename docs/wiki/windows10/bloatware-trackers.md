@@ -1,5 +1,8 @@
 # Supprimer les bloatware et trackers sur Windows 10
 
+## Privatzilla
+1. Privatezilla est le moyen le plus simple d'effectuer un contrôle rapide de la confidentialité et de la sécurité de Windows 10 [privatezilla](https://github.com/builtbybel/privatezilla/releases)
+
 ## Bloatware
 1. Pour supprimer les logiciels préinstallés sur Windows 10, télécharger le script PowerShell [Windows10Debloater](https://github.com/Sycnex/Windows10Debloater)
 2. Lancer PowerShell avec les droits administrateur
